@@ -1,4 +1,4 @@
-// LidarLight PWM Test
+// LidarLite PWM Test
 
 unsigned long pulseWidth;
 
