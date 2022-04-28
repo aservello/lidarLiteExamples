@@ -1,4 +1,4 @@
-// package x.y.z
+package x.y.z
 
 import java.util.Arrays;
 import java.util.Timer;
