@@ -1,4 +1,4 @@
-package org.ilite.frc.common.sensors;
+// package x.y.z
 
 import java.util.Arrays;
 import java.util.Timer;
