@@ -1,6 +1,7 @@
 /*
 
 	LidarLite I2C Connection in Java
+	this is very experimental (no idea if this will work)
 
 */
 
