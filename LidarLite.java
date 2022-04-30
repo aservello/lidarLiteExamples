@@ -1,4 +1,10 @@
-package x.y.z
+/*
+
+	LidarLite I2C Connection in Java
+
+*/
+
+package x.y.z;
 
 import java.util.Arrays;
 import java.util.Timer;
