@@ -3,6 +3,10 @@
 	LidarLite I2C Connection in Java
 	this is very experimental (no idea if this will work)
 
+	useful info:
+	
+	https://docs.wpilib.org/en/stable/docs/hardware/sensors/serial-buses.html
+	https://docs.wpilib.org/en/stable/docs/yearly-overview/known-issues.html#onboard-i2c-causing-system-lockups
 */
 
 package x.y.z;
