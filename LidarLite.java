@@ -21,11 +21,10 @@ import edu.wpi.first.wpilibj.I2C.Port;
 public class LidarLite
 {
   
-	private I2C lidari2c;
+	private I2C lidarI2C;
 	private boolean hasSignal;
 	private final Timer t = new Timer();
 	private TimerTask lidarReadTask = null;
-	private int mCount = 0;
 	private byte[] distance;	
 		
 	
@@ -35,7 +34,7 @@ public class LidarLite
 	
 	public LidarLite()
 	{
-		lidari2c = new I2C(Port.kOnboard, LIDAR_ADDR);
+		lidarI2C = new I2C(Port.kOnboard, LIDAR_ADDR);
 		hasSignal = false;
 		distance = new byte[2];
 	}
@@ -72,13 +71,13 @@ public class LidarLite
 	
 	public void update()
 	{
-		if(lidari2c.write(LIDAR_CONFIG_REGISTER, 0x04b))
+		if(lidarI2C.write(LIDAR_CONFIG_REGISTER, 0x04b))
 		{
 			hasSignal = false;
 			return;
 		}
 		edu.wpi.first.wpilibj.Timer.delay(0.05);
-		if(!lidari2c.read(LIDAR_DISTANCE_REGISTER, 2, distance))
+		if(!lidarI2C.read(LIDAR_DISTANCE_REGISTER, 2, distance))
 		{
 			return;
 		} else {
