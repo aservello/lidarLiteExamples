@@ -7,6 +7,9 @@
 	
 	https://docs.wpilib.org/en/stable/docs/hardware/sensors/serial-buses.html
 	https://docs.wpilib.org/en/stable/docs/yearly-overview/known-issues.html#onboard-i2c-causing-system-lockups
+	
+	WIPLIB Refrence Used
+	https://first.wpi.edu/wpilib/allwpilib/docs/release/java/edu/wpi/first/wpilibj/package-summary.html
 */
 
 package x.y.z;
