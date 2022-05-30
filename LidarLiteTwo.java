@@ -37,7 +37,7 @@ public class LidarLite
     }
 
     public double getDistanceIn() 
-        return (double) getDistance() / 100; // currently in cm, * 0.393701 is for inches
+        return (double) getDistance() * 0.393701;
     }
 
     public void start() {
