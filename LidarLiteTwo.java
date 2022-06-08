@@ -34,8 +34,8 @@ public class LidarLite
 
     public double getDistance() {
         int distCM = (int) Integer.toUnsignedLong(distance[0] << 8) + Byte.toUnsignedInt(distance[1]);
-	System.out.println(distCM / 100)
-	// return distCM / 100; for testing it will just print the distance
+	System.out.println(distCM)
+	// return distCM; (for testing it will just print the distance) if you want it in inches multiply by 0.393701
     }
 
     public void start() {
