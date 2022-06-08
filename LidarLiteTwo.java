@@ -32,12 +32,10 @@ public class LidarLite
         updater = new java.util.Timer();
     }
 
-    private int getDistance() {
-        return (int) Integer.toUnsignedLong(distance[0] << 8) + Byte.toUnsignedInt(distance[1]);
-    }
-
-    public double getDistanceIn() 
-        return (double) getDistance() * 0.393701;
+    public double getDistance() {
+        int distCM = (int) Integer.toUnsignedLong(distance[0] << 8) + Byte.toUnsignedInt(distance[1]);
+	System.out.println(distCM / 100)
+	// return distCM / 100; for testing it will just print the distance
     }
 
     public void start() {
